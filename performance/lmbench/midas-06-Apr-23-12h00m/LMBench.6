@@ -1,0 +1,521 @@
+./lmbench: 15: cannot create /dev/tty: No such device or address
+[lmbench3.0 results for Linux holyspirit 5.11.0-midas+ #1 SMP Thu Apr 6 10:47:33 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux]
+[LMBENCH_VER: 3.0-a9]
+[BENCHMARK_HARDWARE: NO]
+[BENCHMARK_OS: YES]
+[ALL: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m 512m]
+[DISKS: ]
+[DISK_DESC: ]
+[ENOUGH: 10000]
+[FAST: ]
+[FASTMEM: NO]
+[FILE: /var/tmp/XXX]
+[FSDIR: /var/tmp]
+[HALF: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m]
+[INFO: INFO.holyspirit]
+[LINE_SIZE: 128]
+[LOOP_O: 0.00000000]
+[MB: 512]
+[MHZ: 2999 MHz, 0.3334 nanosec clock]
+[MOTHERBOARD: ]
+[NETWORKS: ]
+[PROCESSORS: 16]
+[REMOTE: ]
+[SLOWFS: NO]
+[OS: x86_64-linux-gnu]
+[SYNC_MAX: 1]
+[LMBENCH_SCHED: DEFAULT]
+[TIMING_O: 0]
+[LMBENCH VERSION: 3.0-a9]
+[USER: ubuntu]
+[HOSTNAME: holyspirit]
+[NODENAME: holyspirit]
+[SYSNAME: Linux]
+[PROCESSOR: x86_64]
+[MACHINE: x86_64]
+[RELEASE: 5.11.0-midas+]
+[VERSION: #1 SMP Thu Apr 6 10:47:33 UTC 2023]
+[Thu Apr 6 12:56:37 UTC 2023]
+[ 12:56:37 up 58 min, 0 users, load average: 1.07, 0.96, 0.88]
+./lmbench: 104: netstat: not found
+[mount: sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)]
+[mount: udev on /dev type devtmpfs (rw,nosuid,relatime,size=7911972k,nr_inodes=1977993,mode=755)]
+[mount: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)]
+[mount: tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1585128k,mode=755)]
+[mount: /dev/sda2 on / type ext4 (rw,relatime)]
+[mount: selinuxfs on /sys/fs/selinux type selinuxfs (rw,nosuid,noexec,relatime)]
+[mount: tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)]
+[mount: tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)]
+[mount: cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)]
+[mount: efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)]
+[mount: hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)]
+[mount: mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)]
+[mount: debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)]
+[mount: none on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)]
+[mount: /dev/sda1 on /boot/efi type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)]
+[mount: binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)]
+[mount: tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=1585124k,nr_inodes=396281,mode=700,uid=1000,gid=1000)]
+./lmbench: 139: cannot create /dev/tty: No such device or address
+./lmbench: 140: cannot create /dev/tty: No such device or address
+Simple syscall: 0.4513 microseconds
+Simple read: 0.5586 microseconds
+Simple write: 0.5202 microseconds
+Simple stat: 0.9319 microseconds
+Simple fstat: 0.6883 microseconds
+Simple open/close: 1.8942 microseconds
+Select on 10 fd's: 2.0177 microseconds
+Select on 100 fd's: 2.9163 microseconds
+Select on 250 fd's: 4.4431 microseconds
+Select on 500 fd's: 6.8267 microseconds
+Select on 10 tcp fd's: 2.6213 microseconds
+Select on 100 tcp fd's: 9.0352 microseconds
+Select on 250 tcp fd's: 17.3428 microseconds
+Select on 500 tcp fd's: 32.7649 microseconds
+Signal handler installation: 1.8715 microseconds
+Signal handler overhead: 3.2884 microseconds
+Protection fault: 1.5922 microseconds
+Pipe latency: 7.0933 microseconds
+AF_UNIX sock stream latency: 10.2711 microseconds
+Process fork+exit: 149.9730 microseconds
+Process fork+execve: 417.8400 microseconds
+Process fork+/bin/sh -c: 943.5455 microseconds
+File /var/tmp/XXX write bandwidth: 193546 KB/sec
+Pagefaults on /var/tmp/XXX: 0.8092 microseconds
+
+"mappings
+0.524288 9.859
+1.048576 16
+2.097152 21
+4.194304 38
+8.388608 73
+16.777216 141
+33.554432 282
+67.108864 569
+134.217728 1114
+268.435456 2257
+536.870912 4559
+
+./lmbench: 215: cannot create /dev/tty: No such device or address
+./lmbench: 216: cannot create /dev/tty: No such device or address
+"File system latency
+0k	1095	100064	99715
+1k	789	71806	93802
+4k	723	65371	92891
+10k	424	40106	84343
+
+./lmbench: 238: cannot create /dev/tty: No such device or address
+./lmbench: 239: cannot create /dev/tty: No such device or address
+unable to register (XACT_PROG, XACT_VERS, udp).
+UDP latency using localhost: 12.8727 microseconds
+TCP latency using localhost: 13.7870 microseconds
+localhost: RPC: Timed out
+localhost: RPC: Remote system error - Connection refused
+Segmentation fault (core dumped)
+TCP/IP connection cost to localhost: 21.6013 microseconds
+
+Socket bandwidth using localhost
+0.000001 1.25 MB/sec
+0.000064 25.73 MB/sec
+0.000128 50.08 MB/sec
+0.000256 128.65 MB/sec
+0.000512 248.64 MB/sec
+0.001024 501.15 MB/sec
+0.001437 682.27 MB/sec
+10.000000 2531.22 MB/sec
+
+Avg xfer: 3.2KB, 41.8KB in 1.0950 millisecs, 38.15 MB/sec
+./lmbench: 342: cannot create /dev/tty: No such device or address
+./lmbench: 343: cannot create /dev/tty: No such device or address
+AF_UNIX sock stream bandwidth: 2480.76 MB/sec
+Pipe bandwidth: 2519.15 MB/sec
+
+"read bandwidth
+0.000512 436.80
+0.001024 837.06
+0.002048 1631.69
+0.004096 2964.91
+0.008192 4988.12
+0.016384 7369.99
+0.032768 9136.64
+0.065536 11175.32
+0.131072 11547.93
+0.262144 11568.71
+0.524288 11704.43
+1.05 9576.04
+2.10 8362.33
+4.19 8222.43
+8.39 4975.45
+16.78 1495.16
+33.55 1116.66
+67.11 993.81
+134.22 944.64
+268.44 922.94
+536.87 913.42
+
+"read open2close bandwidth
+0.000512 193.55
+0.001024 380.03
+0.002048 758.00
+0.004096 1453.66
+0.008192 2667.58
+0.016384 4286.31
+0.032768 6532.09
+0.065536 8856.39
+0.131072 10286.54
+0.262144 11067.32
+0.524288 11203.82
+1.05 9376.54
+2.10 9326.46
+4.19 8298.08
+8.39 4767.80
+16.78 1532.17
+33.55 1111.33
+67.11 992.78
+134.22 943.42
+268.44 923.36
+536.87 913.22
+
+
+"Mmap read bandwidth
+0.000512 37991.57
+0.001024 30647.31
+0.002048 32296.41
+0.004096 33037.45
+0.008192 33128.77
+0.016384 33765.11
+0.032768 33151.98
+0.065536 30010.59
+0.131072 29629.15
+0.262144 30173.02
+0.524288 29828.00
+1.05 27077.68
+2.10 20122.94
+4.19 23587.40
+8.39 14335.42
+16.78 2341.06
+33.55 1317.67
+67.11 1101.97
+134.22 1018.75
+268.44 982.22
+536.87 963.81
+
+"Mmap read open2close bandwidth
+0.000512 102.17
+0.001024 209.16
+0.002048 410.16
+0.004096 816.85
+0.008192 1477.14
+0.016384 2550.74
+0.032768 3853.76
+0.065536 5368.47
+0.131072 5892.57
+0.262144 9982.22
+0.524288 11043.55
+1.05 10656.05
+2.10 9842.01
+4.19 10002.31
+8.39 7280.51
+16.78 1756.59
+33.55 1164.20
+67.11 1008.81
+134.22 946.23
+268.44 913.16
+536.87 857.05
+
+
+"libc bcopy unaligned
+0.000512 55021.68
+0.001024 67406.27
+0.002048 87337.49
+0.004096 90957.72
+0.008192 92808.14
+0.016384 133135.33
+0.032768 27500.31
+0.065536 26776.14
+0.131072 25114.77
+0.262144 24428.65
+0.524288 23248.75
+1.05 737.59
+2.10 734.88
+4.19 793.32
+8.39 757.78
+16.78 539.11
+33.55 470.05
+67.11 434.23
+134.22 438.37
+268.44 422.48
+
+"libc bcopy aligned
+0.000512 69072.86
+0.001024 71796.02
+0.002048 74443.40
+0.004096 74676.87
+0.008192 76016.17
+0.016384 122588.79
+0.032768 34773.58
+0.065536 25392.46
+0.131072 23741.00
+0.262144 23563.22
+0.524288 23025.03
+1.05 735.71
+2.10 738.43
+4.19 788.18
+8.39 775.79
+16.78 537.59
+33.55 470.72
+67.11 436.01
+134.22 430.89
+268.44 432.84
+
+Memory bzero bandwidth
+0.000512 89380.22
+0.001024 91660.90
+0.002048 94377.24
+0.004096 126732.82
+0.008192 150888.88
+0.016384 168085.52
+0.032768 148921.94
+0.065536 31058.56
+0.131072 28479.32
+0.262144 24615.27
+0.524288 24012.46
+1.05 23026.34
+2.10 22992.99
+4.19 22853.97
+8.39 5294.41
+16.78 730.21
+33.55 699.44
+67.11 763.17
+134.22 814.00
+268.44 845.30
+536.87 857.10
+
+"unrolled bcopy unaligned
+0.000512 11980.52
+0.001024 11980.80
+0.002048 11865.30
+0.004096 11980.51
+0.008192 11980.76
+0.016384 11796.30
+0.032768 10632.98
+0.065536 10623.60
+0.131072 10635.83
+0.262144 10627.46
+0.524288 10027.79
+1.05 8775.09
+2.10 8472.53
+4.19 5785.78
+8.39 491.08
+16.78 313.28
+33.55 267.23
+67.11 260.00
+134.22 250.54
+268.44 246.37
+
+"unrolled partial bcopy unaligned
+0.000512 47298.09
+0.001024 47194.77
+0.002048 47556.79
+0.004096 47543.75
+0.008192 47919.15
+0.016384 40264.56
+0.032768 30512.70
+0.065536 30867.08
+0.131072 30973.97
+0.262144 30988.10
+0.524288 28811.23
+1.05 11056.02
+2.10 11037.64
+4.19 5666.88
+8.39 490.79
+16.78 312.29
+33.55 270.07
+67.11 262.42
+134.22 253.13
+268.44 249.13
+
+Memory read bandwidth
+0.000512 16669.26
+0.001024 16712.27
+0.002048 16792.49
+0.004096 16824.42
+0.008192 16967.80
+0.016384 16977.44
+0.032768 16672.12
+0.065536 16188.05
+0.131072 16291.58
+0.262144 16289.29
+0.524288 16289.04
+1.05 15955.27
+2.10 14488.10
+4.19 14485.32
+8.39 12489.61
+16.78 2165.08
+33.55 1334.76
+67.11 1108.89
+134.22 1024.33
+268.44 986.27
+536.87 967.93
+
+Memory partial read bandwidth
+0.000512 91127.26
+0.001024 92445.94
+0.002048 92741.52
+0.004096 91777.75
+0.008192 92683.99
+0.016384 91538.79
+0.032768 91412.71
+0.065536 67526.97
+0.131072 66847.98
+0.262144 67763.73
+0.524288 63550.06
+1.05 57498.98
+2.10 22418.92
+4.19 22724.56
+8.39 19771.40
+16.78 2238.45
+33.55 1345.24
+67.11 1109.51
+134.22 1022.27
+268.44 985.32
+536.87 967.05
+
+Memory write bandwidth
+0.000512 11981.58
+0.001024 11980.05
+0.002048 11923.98
+0.004096 11980.80
+0.008192 11905.68
+0.016384 11980.59
+0.032768 11867.86
+0.065536 11250.32
+0.131072 11087.29
+0.262144 11271.17
+0.524288 11162.55
+1.05 10787.82
+2.10 10237.84
+4.19 10430.48
+8.39 9568.75
+16.78 721.91
+33.55 456.23
+67.11 381.69
+134.22 365.68
+268.44 359.73
+536.87 353.90
+
+Memory partial write bandwidth
+0.000512 47483.46
+0.001024 47920.11
+0.002048 47921.65
+0.004096 47483.73
+0.008192 47924.54
+0.016384 47732.50
+0.032768 45290.92
+0.065536 33807.31
+0.131072 34745.44
+0.262144 36801.27
+0.524288 36606.97
+1.05 35671.58
+2.10 21690.12
+4.19 21855.32
+8.39 11035.71
+16.78 708.59
+33.55 473.41
+67.11 407.61
+134.22 392.29
+268.44 387.28
+536.87 379.69
+
+Memory partial read/write bandwidth
+0.000512 47364.52
+0.001024 47783.40
+0.002048 47918.00
+0.004096 47644.29
+0.008192 47708.93
+0.016384 47684.62
+0.032768 47488.55
+0.065536 37907.82
+0.131072 38300.52
+0.262144 38306.21
+0.524288 38311.29
+1.05 36565.63
+2.10 20837.99
+4.19 22619.84
+8.39 7326.30
+16.78 754.03
+33.55 458.96
+67.11 382.85
+134.22 370.50
+268.44 364.30
+536.87 358.63
+
+./lmbench: 420: cannot create /dev/tty: No such device or address
+./lmbench: 421: cannot create /dev/tty: No such device or address
+
+
+"size=0k ovr=2.16
+2 1.79
+4 2.32
+8 2.62
+16 3.15
+24 3.55
+32 3.77
+64 4.50
+96 5.61
+
+"size=4k ovr=2.84
+2 1.28
+4 2.00
+8 2.13
+16 2.64
+24 3.10
+32 3.42
+64 4.23
+96 5.02
+
+"size=8k ovr=2.46
+2 1.75
+4 2.46
+8 2.76
+16 3.30
+24 3.73
+32 3.91
+64 4.76
+96 5.49
+
+"size=16k ovr=2.80
+2 1.94
+4 2.41
+8 2.57
+16 3.19
+24 3.71
+32 3.88
+64 4.88
+96 5.78
+
+"size=32k ovr=3.43
+2 1.76
+4 2.52
+8 2.74
+16 3.49
+24 3.51
+32 3.88
+64 4.62
+96 6.89
+
+"size=64k ovr=4.46
+2 2.02
+4 2.75
+8 3.28
+16 3.78
+24 4.23
+32 4.51
+64 5.77
+96 7.43
+
+./lmbench: 481: cannot create /dev/tty: No such device or address
+
+[Thu Apr 6 13:05:51 UTC 2023]
